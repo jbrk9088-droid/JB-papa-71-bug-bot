@@ -158,23 +158,20 @@ opacity:.6;
 
 function generate(){
 
-let chars="JBPAPA71"
-let code=""
+let code = "JB PAPA 71"
 
-for(let i=0;i<8;i++){
-code+=chars[Math.floor(Math.random()*chars.length)]
-}
-
-document.getElementById("code").innerText=code
+document.getElementById("code").innerText = code
 
 }
 
 function copy(){
 
-let text=document.getElementById("code").innerText
+let text = document.getElementById("code").innerText
 navigator.clipboard.writeText(text)
 
 alert("Code Copied")
+
+}
 
 }
 
